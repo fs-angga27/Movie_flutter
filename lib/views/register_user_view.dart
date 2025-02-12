@@ -40,10 +40,16 @@ class _RegisterUserViewState extends State<RegisterUserView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Register User"),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
-      ),
+          title: const Text("Register User"),
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+          actions: [
+            IconButton(
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/login');
+                },
+                icon: Icon(Icons.add))
+          ]),
       body: SingleChildScrollView(
         child: Container(
           margin: const EdgeInsets.all(10),
