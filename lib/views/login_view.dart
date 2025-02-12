@@ -105,7 +105,6 @@ class _LoginViewState extends State<LoginView> {
                                   .showAlert(context, result.message, false);
                             }
                           }
-
                         },
                         child: isLoading == false
                             ? Text("LOGIN")
