@@ -16,21 +16,19 @@ class _LoginViewState extends State<LoginView> {
   TextEditingController password = TextEditingController();
   bool isLoading = false;
   bool showPass = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login"),
-        backgroundColor: Colors.green,
-        foregroundColor: Colors.white,
-        actions: [
-          IconButton(
+          title: Text("Login"),
+          backgroundColor: Colors.green,
+          foregroundColor: Colors.white,
+          leading: IconButton(
               onPressed: () {
-                Navigator.pushReplacementNamed(context, '/login');
+                Navigator.pushReplacementNamed(context, '/register');
               },
-              icon: Icon(Icons.add))
-        ],
-      ),
+              icon: Icon(Icons.arrow_back))),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.all(10),
