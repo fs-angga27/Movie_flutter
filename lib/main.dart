@@ -8,7 +8,7 @@ void main() {
     debugShowCheckedModeBanner: false,
     initialRoute: '/',
     routes: {
-      '/': (context) => RegisterUserView(),
+      '/register': (context) => RegisterUserView(),
       '/login': (context) => LoginView(),
       '/dashboard': (context) => DashboardView(),
     },
